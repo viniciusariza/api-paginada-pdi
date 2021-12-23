@@ -17,18 +17,18 @@ O job cria uma rotina de consumo de dados de APIs paginadas através do Pentaho 
 *	Editar o step "GerarUrlParametros" da transformação “UltimaPagina”, informando os dados da API. Para o exemplo criado, a autenticação é feita com os parâmetros no header e o retorno é em JSON, podendo ser ajustado conforme necessidade;
 
 <div align="center" >
-  <img src="img/001.png">
+  <img src="/img/001.png">
 </div>
 
 *	A transformação “IncrementarLoop” não precisa ser editada;
 *	Editar o step “GerarUrlParametros” na transformação “ExtrairAPIBanco” informando os dados da api, se atentando para o parâmetro que recebe o número da paginação atual. Também é necessário incluir os dados do banco de dados no último step da transformação;
 
 <div align="center" >
-  <img src="img/002.png">
+  <img src="/img/002.png">
 </div>
 
 *	O job “Execucao” pode ser automatizado utilizando o arquivo “Executa_Job.bat”, podendo ser adicionado em qualquer agendador de tarefas, fazendo com que a execução seja periódica na janela escolhida. Uma das maneiras de automatizar o ETL é utilizando o Cronjob no Linux ou o Agendador de Tarefas no Windows.
 
 <div align="center" >
-  <img src="img/003.png">
+  <img src="/img/003.png">
 </div>
